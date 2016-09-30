@@ -14,7 +14,7 @@ sudo apt-get update
 echo " ==> Updated"
 
 echo " * Installing lots of build dependencies"
-sudo apt-get install libbz2-dev libpcre3-dev libcoin80-dev libsoqt4-dev libode-dev libann-dev libqhull-dev libassimp-dev liboctave-dev libavcodec-dev libavformat-dev libswscale-dev python-dev python-numpy python-sympy libboost1.54-dev libboost-date-time1.54-dev libboost-filesystem1.54-dev libboost-iostreams1.54-dev libboost-python1.54-dev libboost-regex1.54-dev libboost-system1.54-dev libboost-thread1.54-dev libxml2-dev libopenscenegraph-dev python-numpy python-scipy python-matplotlib
+sudo apt-get -y install libbz2-dev libpcre3-dev libcoin80-dev libsoqt4-dev libode-dev libann-dev libqhull-dev libassimp-dev liboctave-dev libavcodec-dev libavformat-dev libswscale-dev python-dev python-numpy python-sympy libboost1.54-dev libboost-date-time1.54-dev libboost-filesystem1.54-dev libboost-iostreams1.54-dev libboost-python1.54-dev libboost-regex1.54-dev libboost-system1.54-dev libboost-thread1.54-dev libxml2-dev libopenscenegraph-dev python-numpy python-scipy python-matplotlib
 echo " ==> Installed"
 
 
