@@ -34,7 +34,7 @@ sudo make install
 echo " ==> Built"
 
 if [ -e ~/catkin_ws/ ]; then
-	read -p "Are you sure? " -n 1 -r
+	read -p "We are going to globber your catkin_ws/ ... Are you sure? [Yy]" -n 1 -r
 	echo    # (optional) move to a new line
 	if [[ ! $REPLY =~ ^[Yy]$ ]]
 	then
@@ -46,11 +46,5 @@ else
 	mkdir -p ~/catkin_ws/src
 fi
 
-source ~/.bashrc # just in case for catkin_init_workspace
-cd ~/catkin_ws/src
-catkin_init_workspace
-cd ~/catkin_ws/
-catkin_make
-echo " * Adding catkin devel/setup.sh call to bashrc"
-echo "source ~/catkin_ws/devel/setup.sh" >> ~/.bashrc
-source ~/.bashrc
+
+
