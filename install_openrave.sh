@@ -46,7 +46,11 @@ else
 	mkdir -p ~/catkin_ws/src
 fi
 
+source ~/.bashrc # just in case for catkin_init_workspace
 cd ~/catkin_ws/src
 catkin_init_workspace
 cd ~/catkin_ws/
 catkin_make
+echo " * Adding catkin devel/setup.sh call to bashrc"
+echo "source ~/catkin_ws/devel/setup.sh" >> ~/.bashrc
+source ~/.bashrc
