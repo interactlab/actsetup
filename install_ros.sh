@@ -25,5 +25,5 @@ echo " * Adding ROS setup.sh call to bashrc"
 echo "source /opt/ros/indigo/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 echo " * Installing rosinstall"
-sudo apt-get install python-rosinstall
+sudo apt-get -y install python-rosinstall
 echo " ==> Installed"
