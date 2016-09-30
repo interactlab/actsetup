@@ -1,6 +1,6 @@
 sudo apt-get -y install libtinyxml2-dev # ensure tinyxml is installed
 sudo apt-get -y install ros-indigo-srdfdom
-cd src
+cd ~/catkin_ws/src
 git clone https://github.com/nlandolfi/actsrc.git ./
 git submodule update --init --recursive
 cd ..
