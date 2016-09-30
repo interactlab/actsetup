@@ -33,6 +33,7 @@ cmake -DCMAKE_INSTALL_PREFIX=/usr .. > outputcmake.txt
 sudo make install
 echo " ==> Built"
 
+# Set up basic catkin_ws dir and src dir, to be filled by install_act.sh
 if [ -e ~/catkin_ws/ ]; then
 	read -p "We are going to globber your catkin_ws/ ... Are you sure? [Yy]" -n 1 -r
 	echo    # (optional) move to a new line
@@ -45,6 +46,3 @@ if [ -e ~/catkin_ws/ ]; then
 else
 	mkdir -p ~/catkin_ws/src
 fi
-
-
-
