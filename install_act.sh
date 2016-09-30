@@ -18,3 +18,7 @@ cd ..
 source ./devel/setup.sh
 catkin_make
 
+git config --global core.editor vim # :p
+sudo apt-get -y install python-pip
+sudo pip uninstall sympy
+sudo pip install sympy==0.7.1
