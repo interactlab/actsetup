@@ -2,25 +2,43 @@
 
 set -e
 
-#echo " * Adding apt repo for openrave"
-#sudo add-apt-repository ppa:openrave/release
-#echo " ==> Added"
-#echo " * sudo apt-get install openrave"
-#sudo apt-get install openrave
-#echo " ==> Installed"
-
-echo " * sudo apt-get update"
+echo " * \`$ sudo apt-get update\`"
 sudo apt-get update
 echo " ==> Updated"
 
 echo " * Installing lots of build dependencies"
-sudo apt-get -y install libbz2-dev libpcre3-dev libcoin80-dev libsoqt4-dev libode-dev libann-dev libqhull-dev libassimp-dev liboctave-dev libavcodec-dev libavformat-dev libswscale-dev python-dev python-numpy python-sympy libboost1.54-dev libboost-date-time1.54-dev libboost-filesystem1.54-dev libboost-iostreams1.54-dev libboost-python1.54-dev libboost-regex1.54-dev libboost-system1.54-dev libboost-thread1.54-dev libxml2-dev libopenscenegraph-dev python-numpy python-scipy python-matplotlib
+sudo apt-get -y install \\
+    libbz2-dev="1.0.6-5" \\
+    libpcre3-dev="1:8.31-2ubuntu2.3" \\
+    libcoin80-dev="3.1.4~abc9f50-4ubuntu2" \\
+    libsoqt4-dev="1.6.0~e8310f-1" \\
+    libode-dev=":0.11.1-4ubuntu1" \\
+    libann-dev="1.1.2+doc-4.1" \\
+    libqhull-dev="2012.1-4" \\
+    libassimp-dev="3.0~dfsg-2" \\
+    liboctave-dev="3.8.1-1ubuntu1" \\
+    libavcodec-dev \\
+    libavformat-dev \\
+    libswscale-dev \\
+    python-dev \\
+    python-numpy \\
+    python-sympy \\
+    libboost1.54-dev \\
+    libboost-date-time1.54-dev \\
+    libboost-filesystem1.54-dev \\
+    libboost-iostreams1.54-dev \\
+    libboost-python1.54-dev \\
+    libboost-regex1.54-dev \\
+    libboost-system1.54-dev \\
+    libboost-thread1.54-dev \\
+    libxml2-dev \\
+    libopenscenegraph-dev python-numpy python-scipy python-matplotlib
 echo " ==> Installed"
 
 
 echo " * Cloning openrave project"
 if [ -e openrave ]; then
-	sudo rm -rf openrave
+    sudo rm -rf openrave
 fi
 git clone https://github.com/personalrobotics/openrave
 echo " ==> Cloned"
