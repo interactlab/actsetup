@@ -12,7 +12,7 @@ sudo apt-get -y install \\
     libpcre3-dev="1:8.31-2ubuntu2.3" \\
     libcoin80-dev="3.1.4~abc9f50-4ubuntu2" \\
     libsoqt4-dev="1.6.0~e8310f-1" \\
-    libode-dev=":0.11.1-4ubuntu1" \\
+    libode-dev="2:0.11.1-4ubuntu1" \\
     libann-dev="1.1.2+doc-4.1" \\
     libqhull-dev="2012.1-4" \\
     libassimp-dev="3.0~dfsg-2" \\
