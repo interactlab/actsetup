@@ -9,7 +9,7 @@ sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net --recv-key 0xB01FA
 echo " * Ensuring up-to-date package index"
 sudo apt-get -y update
 echo " * Installing ros indigo desktop full"
-sudo apt-get -y install ros-indigo-desktop-full=1.1.4-0trusty-20160826-122812-0700
+sudo apt-get -y install ros-indigo-desktop-full="1.1.4-0trusty-20160826-122812-0700"
 echo " ==> Installed, to find packages: `apt-cache search ros-indigo`"
 echo " * Intializing `rosdep` (`sudo rosdep init`)"
 if [ -e /etc/ros/rosdep/sources.list.d/20-default.list ]; then
@@ -25,5 +25,5 @@ echo " * Adding ROS setup.sh call to bashrc"
 echo "source /opt/ros/indigo/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 echo " * Installing rosinstall"
-sudo apt-get -y install python-rosinstall=0.7.8-1
+sudo apt-get -y install python-rosinstall="0.7.8-1"
 echo " ==> Installed"
