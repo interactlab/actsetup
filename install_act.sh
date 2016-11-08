@@ -29,4 +29,4 @@ source ./devel/setup.sh
 echo " * Adding catkin devel/setup.sh call to bashrc"
 echo "source ~/catkin_ws/devel/setup.sh" >> ~/.bashrc
 source ~/.bashrc
-echco "=> Added"
+echo "=> Added"
