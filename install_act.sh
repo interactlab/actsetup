@@ -2,8 +2,9 @@
 
 set -e
 
+# ensure tinyxml is installed
 sudo apt-get -y install \
-    libtinyxml2-dev="0~git20120518.1.a2ae54e-1" \ # ensure tinyxml is installed
+    libtinyxml2-dev="0~git20120518.1.a2ae54e-1" \
     ros-indigo-srdfdom="0.3.3-0trusty-20160909-191729-0700" \
     python-pip="1.5.4-1ubuntu4"
 cd ~/catkin_ws/src
