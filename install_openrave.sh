@@ -24,7 +24,7 @@ sudo apt-get -y install \
     libcoin80-dev="3.1.4~abc9f50-4ubuntu2" \
     liboctave-dev="3.8.1-1ubuntu1" \
     libode-dev="2:0.11.1-4ubuntu1" \
-    libopenscenegraph-dev="3.2.0~rc1-4ubuntu0.1"
+    libopenscenegraph-dev="3.2.0~rc1-4ubuntu0.1" \
     libpcre3-dev="1:8.31-2ubuntu2.3" \
     libqhull-dev="2012.1-4" \
     libsoqt4-dev="1.6.0~e8310f-1" \
