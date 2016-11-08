@@ -9,7 +9,11 @@ sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net --recv-key 0xB01FA
 echo " * Ensuring up-to-date package index"
 sudo apt-get -y update
 echo " * Installing ros indigo desktop full"
-sudo apt-get -y install ros-indigo-desktop-full="1.1.4-0trusty-20160826-122812-0700"
+# Don't lock down this dep because seems to depend on timestamp, not sure why
+# but I've also only ever seen 1 version on it and we specifically grap there package server
+# so I'm willing to trust it
+#sudo apt-get -y install ros-indigo-desktop-full="1.1.4-0trusty-20161018-203600-0700"
+sudo apt-get -y install ros-indigo-desktop-full
 echo " ==> Installed, to find packages: `apt-cache search ros-indigo`"
 echo " * Intializing `rosdep` (`sudo rosdep init`)"
 # Not sure what this is, but I needed to remove it to get it to work
