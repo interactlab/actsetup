@@ -10,8 +10,6 @@ echo " * Installing lots of build dependencies"
 sudo apt-get -y install \
     libann-dev="1.1.2+doc-4.1" \
     libassimp-dev="3.0~dfsg-2" \
-    libavcodec-dev="6:9.18-0ubuntu0.14.04.1" \
-    libavformat-dev="6:9.18-0ubuntu0.14.04.1" \
     libboost-date-time1.54-dev="1.54.0-4ubuntu3.1" \
     libboost-filesystem1.54-dev="1.54.0-4ubuntu3.1" \
     libboost-iostreams1.54-dev="1.54.0-4ubuntu3.1" \
@@ -28,12 +26,16 @@ sudo apt-get -y install \
     libpcre3-dev="1:8.31-2ubuntu2.3" \
     libqhull-dev="2012.1-4" \
     libsoqt4-dev="1.6.0~e8310f-1" \
-    libswscale-dev="6:9.18-0ubuntu0.14.04.1" \
     libxml2-dev="2.9.1+dfsg1-3ubuntu4.8" \
     python-dev="2.7.5-5ubuntu3" \
     python-matplotlib="1.3.1-1ubuntu5" \
     python-numpy="1:1.8.2-0ubuntu0.1" \
     python-sympy="0.7.4.1-1"
+
+sudo aot-get -y install \
+    libavcodec-dev \
+    libavformat-dev \
+    libswscale-dev 
 echo " ==> Installed"
 
 echo " * Cloning openrave project"
