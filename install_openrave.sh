@@ -32,7 +32,7 @@ sudo apt-get -y install \
     python-numpy="1:1.8.2-0ubuntu0.1" \
     python-sympy="0.7.4.1-1"
 
-sudo aot-get -y install \
+sudo apt-get -y install \
     libavcodec-dev \
     libavformat-dev \
     libswscale-dev 
