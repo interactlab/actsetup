@@ -30,7 +30,9 @@ sudo apt-get -y install \
     python-dev="2.7.5-5ubuntu3" \
     python-matplotlib="1.3.1-1ubuntu5" \
     python-numpy="1:1.8.2-0ubuntu0.1" \
-    python-sympy="0.7.4.1-1"
+    python-sympy="0.7.4.1-1" \
+    python-scipy
+
 
 sudo apt-get -y install \
     libavcodec-dev \
