@@ -28,6 +28,7 @@ git clone https://github.com/interactlab/actsrc.git ./
 git submodule update --init --recursive
 
 source ~/.bashrc # just in case for catkin_init_workspace
+source /opt/ros/indigo/setup.bash # sourcing bash file wasn't doing the trick?
 catkin_init_workspace
 cd ..
 catkin_make
