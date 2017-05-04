@@ -26,7 +26,7 @@ sudo apt-get -y install \
     libpcre3-dev="1:8.31-2ubuntu2.3" \
     libqhull-dev="2012.1-4" \
     libsoqt4-dev="1.6.0~e8310f-1" \
-    libxml2-dev="2.9.1+dfsg1-3ubuntu4.8" \
+    libxml2-dev="2.9.1+dfsg1-3ubuntu4.9" \
     python-dev="2.7.5-5ubuntu3" \
     python-matplotlib="1.3.1-1ubuntu5" \
     python-numpy="1:1.8.2-0ubuntu0.1" \
