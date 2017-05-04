@@ -39,6 +39,7 @@ git config --global core.editor vim # :p
 # working old version
 sudo pip uninstall sympy
 sudo pip install sympy==0.7.1
+sudo pip install enum34
 
 source ./devel/setup.sh
 echo " * Adding catkin devel/setup.sh call to bashrc"
